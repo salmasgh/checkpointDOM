@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="checkpointdom.css" />
+    <script defer src="checkpointdom.js"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="navbar">
+        <div class="navbar1">
+          <img src="images/logo.png" alt="logo" id="logo" />
+          <h1>Flora</h1>
+        </div>
+        <div class="navbar2">
+          <ul type="none" class="navlist">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar3">
+          <button id="shopping-cart-btn">
+            <img src="images/icon.png" alt="shopping cart" id="shop-cart" />
+          </button>
+          <div class="number-items">
+            <p id="number-items">0</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main  -->
+    <main id="main">
+      <button id="add-item">+</button>
+      <div class="new-item hidden" id="new-item-window">
+        <label for="name">Name of the item :</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="category">Category of the item :</label>
+        <input type="text" id="category" />
+        <br />
+        <label for="image">Image of the item :</label>
+        <input type="text" id="img" />
+        <br />
+        <label for="price">Price of the item :</label>
+        <input type="number" id="price" />
+        <br />
+        <button id="Cancel">Cancel</button>
+        <button id="ok">Ok</button>
+      </div>
+      <div class="item-container"></div>
+      <div class="shopping-cart hidden">
+        <h1 class="title">Here are your purchases</h1>
+        <div class="purchase-container"></div>
+        <p class="total"></p>
+        <button>Purchase</button>
+      </div>
+
+      <div id="about">
+        <h1>About us</h1>
+        <p class="paragraph">
+          Welcome to Flora, your go-to online flower shop for beautiful
+          arrangements and thoughtful gifts. With our passion for flowers and
+          commitment to exceptional service, we create memorable experiences for
+          our valued customers. From vibrant bouquets to eco-friendly packaging,
+          we're here to bring the beauty of nature to your doorstep. <br><br> Celebrate
+          life's moments with Flora.
+        </p>
+        <img src="images/logo.png" alt="" id="little-logo">
+      </div>
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer">
+      <ul type="none">
+        <li class="first">Contact</li>
+        <li>infoline : 52 764 302</li>
+        <li>client service : 22 933 433</li>
+        <li>Email : daisys@yahoo.com</li>
+      </ul>
+      <div class="reseaux">
+        <img src="images/facebook.png" alt="" id="smaller" />
+        <img src="images/insta.png" alt="" id="smaller" />
+        <img src="images/twitter.png" alt="" />
+        <img src="images/likedin.png" alt="" id="smaller" />
+      </div>
+    </footer>
+  </body>
+</html>
